@@ -52,6 +52,7 @@ h3 {
     height: 100vh;
     position: relative;
     padding-bottom: 350px; /* 根據 introBox 的高度調整 */
+    padding-top: 100px;
 }
 
 /* 左右背景圖 */
@@ -95,7 +96,7 @@ h3 {
 .social-li{
     display: flex;
     justify-content: space-around;
-    gap: 24px;
+    gap: 19px;
     list-style-type: none;
 }
 .wrap2{
@@ -137,8 +138,23 @@ h3 {
     left: 0;
 }
 /* ---------------RWD--------------- */
-@media (max-width="926px") {
+@media (max-width: 926px) {
+    h1{
+        font-size: 52px;
+    }
+    .text-overlay{
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .hero{
+        flex-direction: column;
+    }
     .self-hero, .text-hero{
         width: 100%;
+    }
+    .introBox{
+        top: 100%;
+        left: 5%;
     }
 }
