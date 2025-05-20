@@ -14,7 +14,7 @@ h1{
     font-weight: bold;
     color: var(--color-primary);
 }
-h3{
+h3 {
     font-size: 28px;
 }
 /*---元素style---*/
@@ -66,4 +66,21 @@ h3{
 .descrip{
     color: var(--color-primary);
     font-weight: bold;
+}
+.introBox{
+    width: auto;
+    padding: 80px 40px 80px 40px;
+    background: #b5c6d1;
+    z-index: 999;
+    font-size: 28px;
+}
+.social{
+    display: flex;
+    justify-content: left;
+}
+.social-li{
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    list-style-type: none;
 }
