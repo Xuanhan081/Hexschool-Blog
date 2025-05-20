@@ -5,6 +5,7 @@
 body {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.5;
+    background: #FBFBFB;
 }
 a{
     text-decoration: none;
@@ -14,8 +15,14 @@ h1{
     font-weight: bold;
     color: var(--color-primary);
 }
+h2{
+    font-size: 64px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+}
 h3 {
     font-size: 28px;
+    padding: 15px 0px 15px 0px;
 }
 /*---元素style---*/
 .navbar{
@@ -43,6 +50,8 @@ h3 {
 .hero{
     display: flex;
     height: 100vh;
+    position: relative;
+    padding-bottom: 350px; /* 根據 introBox 的高度調整 */
 }
 
 /* 左右背景圖 */
@@ -69,12 +78,17 @@ h3 {
 }
 .introBox{
     width: auto;
+    max-width: 1060px;
     padding: 80px 40px 80px 40px;
-    background: #b5c6d1;
-    z-index: 999;
+    background: #ffffff;
+    z-index: 9;
     font-size: 28px;
+    position: absolute;
+    top: 85%; /* 使 introBox 上推85%，有一部份蓋住 hero */
+    right: 5%; /* 向右靠齊，留5%空間 */
 }
 .social{
+    margin-top: 20px;
     display: flex;
     justify-content: left;
 }
@@ -83,4 +97,48 @@ h3 {
     justify-content: space-around;
     gap: 24px;
     list-style-type: none;
+}
+.wrap2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrap2 h3{
+    font-weight: bold;
+}
+.mainCol{
+    justify-content: center;
+    background: #000;
+}
+.serviceBox1,.serviceBox2{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.serviceBox2{
+    justify-content: flex-end;
+}
+.mainCol img{
+    width: 70%;
+}
+.itemBoxR,.itemBoxL{
+    width: 35%;
+    background: #ffff;
+    position: absolute;
+    right: 0px;
+    padding: 24px;
+}
+.itemBoxL{
+    left: 0;
+}
+/* ---------------RWD--------------- */
+@media (max-width="926px") {
+    .self-hero, .text-hero{
+        width: 100%;
+    }
 }
