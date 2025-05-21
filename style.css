@@ -89,7 +89,7 @@ h3 {
     font-size: 28px;
     position: absolute;
     top: 85%; /* 使 introBox 上推85%，有一部份蓋住 hero */
-    right: 5%; /* 向右靠齊，留5%空間 */
+    left: 40%; /* 向左靠齊，留40%空間 */
 }
 .social{
     margin-top: 20px;
@@ -169,6 +169,7 @@ h3 {
     .introBox{
         top: 80%;
         left: 5%;
+        right: 5%;
         padding: 40px 20px 40px 20px;
     }
     .wrap2 h2{
