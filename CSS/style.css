@@ -7,6 +7,9 @@ body {
     line-height: 1.5;
     background: #FBFBFB;
 }
+ul{
+    list-style-type: none;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -25,9 +28,19 @@ h3 {
     font-size: 28px;
     padding: 15px 0px 15px 0px;
 }
+h4{
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+}
+time{
+    display: block;
+}
 /*---元素style---*/
 /* icon */
 .bi bi-arrow-right-circle{
+    width: 24px;
+}
+.bi bi-arrow-left-circle-fill,.bi bi-arrow-right-circle-fill{
     width: 24px;
 }
 /* icon */
@@ -150,6 +163,76 @@ h3 {
     font-weight: bold;
     padding: 10px;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectBlog ul{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 25px;/*比justify-content: space-between好原因是當一排不滿三個card排版奇怪*/
+    /* flex-wrap: wrap; */
+}
+.card{
+    width: 32%;
+}
+.card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card h3,.card h4{
+    padding: 0;
+}
+.card h4 a{
+    color: var(--color-primary);
+}
+.info{
+    padding: 0;
+}
+.btn_read{
+    background: #ffffff;
+    background-color: 2px solid
+    black;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px 10px 15px ;
+    margin-top: 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+.btn_read:hover{
+    color: white;
+    background: #000;
+}
+
+
+
+
+
+
+/*收合的class 參考GPT*/
+.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 顯示兩行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: visible;
+}
+
+
+
+
+
 /* ---------------RWD--------------- */
 @media (max-width: 926px) {
     h1{
@@ -191,4 +274,5 @@ h3 {
         position: relative;
         width: 100%;
     }
+    
 }
