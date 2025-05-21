@@ -26,6 +26,11 @@ h3 {
     padding: 15px 0px 15px 0px;
 }
 /*---元素style---*/
+/* icon */
+.bi bi-arrow-right-circle{
+    width: 24px;
+}
+/* icon */
 .navbar{
     position: fixed;
     z-index: 999;
@@ -157,7 +162,6 @@ h3 {
     }
     .hero{
         flex-direction: column;
-        padding-bottom: 250px;
     }
     .self-hero, .text-hero{
         width: 100%;
@@ -167,7 +171,7 @@ h3 {
         padding-top: 20px;
     }
     .introBox{
-        top: 80%;
+        top: 85%;
         left: 5%;
         right: 5%;
         padding: 40px 20px 40px 20px;
