@@ -120,12 +120,12 @@ time{
     gap: 19px;
     list-style-type: none;
 }
-.wrap2{
+.container{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.wrap2 h3{
+.container h3{
     font-weight: bold;
 }
 .mainCol{
@@ -163,10 +163,11 @@ time{
     font-weight: bold;
     padding: 10px;
 }
-.container{
+.blogshow{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .selectBlog ul{
     width: 100%;
@@ -207,28 +208,35 @@ time{
     color: white;
     background: #000;
 }
-
-
-
-
-
-
 /*收合的class 參考GPT*/
 .collapsed {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* 顯示兩行 */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 顯示兩行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
 .expanded {
-  display: block;
-  -webkit-line-clamp: unset;
-  -webkit-box-orient: unset;
-  overflow: visible;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
 }
-
+.arrow {
+    position: absolute;
+    top: 50%;             /* 垂直置中 */
+    transform: translateY(-50%);
+    font-size: 35px;
+    z-index: 10;
+}
+/* 左箭頭在容器左邊「外面」 */
+.arrow-left {
+    left: -50px;
+}
+/* 右箭頭在容器右邊「外面」 */
+.arrow-right {
+    right: -50px;
+}
 
 
 
@@ -259,7 +267,7 @@ time{
         right: 5%;
         padding: 40px 20px 40px 20px;
     }
-    .wrap2 h2{
+    .container h2{
         text-align: center;
     }
     .mainCol img{
