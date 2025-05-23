@@ -44,6 +44,7 @@ time{
     width: 24px;
 }
 /* icon */
+/* -------------------------------------------------------------------------------------header */
 .navbar{
     position: fixed;
     z-index: 999;
@@ -68,6 +69,8 @@ time{
 .menu-item a{
     color: #000;
 }
+/* -------------------------------------------------------------------------------------header */
+/* -------------------------------------------------------------------------------------section-home1 */
 .hero{
     display: flex;
     height: 100vh;
@@ -106,7 +109,7 @@ time{
     z-index: 9;
     font-size: 28px;
     position: absolute;
-    top: 85%; /* 使 introBox 上推85%，有一部份蓋住 hero */
+    top: 90%; /* 使 introBox 上推85%，有一部份蓋住 hero */
     left: 40%; /* 向左靠齊，留40%空間 */
 }
 .social{
@@ -120,6 +123,39 @@ time{
     gap: 19px;
     list-style-type: none;
 }
+@media (max-width: 992px) {
+    h1{
+        font-size: 52px;
+    }
+    .text-overlay{
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .self-hero, .text-hero{
+        width: 100%;
+    }
+    .text-hero{
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .introBox{
+        top: 85%;
+        left: 5%;
+        right: 5%;
+        padding: 40px 20px 40px 20px;
+    }
+}
+@media(max-width: 767px){
+    .hero{
+        padding-bottom: 400px;
+    }
+}
+/* -------------------------------------------------------------------------------------section-home1 */
+/* -------------------------------------------------------------------------------------section-service */
 .container{
     width: 80%;
     margin-left: auto;
@@ -163,6 +199,8 @@ time{
     font-weight: bold;
     padding: 10px;
 }
+/* -------------------------------------------------------------------------------------section-service */
+/* -------------------------------------------------------------------------------------section-blog */
 .blogshow{
     display: flex;
     justify-content: center;
@@ -238,35 +276,8 @@ time{
     right: -50px;
 }
 
-
-
-
-/* ---------------RWD--------------- */
-@media (max-width: 926px) {
-    h1{
-        font-size: 52px;
-    }
-    .text-overlay{
-        width: 100%;
-        padding-left: 10px;
-        text-align: center;
-    }
-    .hero{
-        flex-direction: column;
-    }
-    .self-hero, .text-hero{
-        width: 100%;
-    }
-    .text-hero{
-        align-items: flex-start;
-        padding-top: 20px;
-    }
-    .introBox{
-        top: 85%;
-        left: 5%;
-        right: 5%;
-        padding: 40px 20px 40px 20px;
-    }
+@media (max-width: 992px) {
+    
     .container h2{
         text-align: center;
     }
@@ -284,3 +295,5 @@ time{
     }
     
 }
+/* -------------------------------------------------------------------------------------section-blog */
+
