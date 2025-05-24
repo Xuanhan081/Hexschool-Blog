@@ -27,6 +27,7 @@ h2{
 h3 {
     font-size: 28px;
     padding: 15px 0px 15px 0px;
+    font-family: "Noto Serif HK", serif;
 }
 h4{
     font-size: 24px;
@@ -226,6 +227,7 @@ time{
 }
 .card{
     width: 32%;
+    margin-bottom: 30px;
 }
 .card img{
     width: 100%;
