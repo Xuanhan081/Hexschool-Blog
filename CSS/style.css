@@ -75,7 +75,7 @@ time{
     display: flex;
     height: 100vh;
     position: relative;
-    padding-bottom: 350px; /* 根據 introBox 的高度調整 */
+    padding-bottom: 320px; /* 根據 introBox 的高度調整 */
     padding-top: 100px;
 }
 
@@ -104,12 +104,12 @@ time{
 .introBox{
     width: auto;
     max-width: 1060px;
-    padding: 80px 40px 80px 40px;
+    padding: 65px 40px 65px 40px;
     background: #ffffff;
     z-index: 9;
     font-size: 28px;
     position: absolute;
-    top: 90%; /* 使 introBox 上推85%，有一部份蓋住 hero */
+    top: 85%; /* 使 introBox 下推92%，有一部份蓋住 hero */
     left: 40%; /* 向左靠齊，留40%空間 */
 }
 .social{
@@ -123,8 +123,13 @@ time{
     gap: 19px;
     list-style-type: none;
 }
+@media(max-width: 1450px){
+    .hero h1{
+        font-size: 80px;
+    }
+}
 @media (max-width: 992px) {
-    h1{
+    .hero h1{
         font-size: 52px;
     }
     .text-overlay{
@@ -143,13 +148,16 @@ time{
         padding-top: 20px;
     }
     .introBox{
-        top: 85%;
+        top: 95%;
         left: 5%;
         right: 5%;
         padding: 40px 20px 40px 20px;
     }
 }
 @media(max-width: 767px){
+    .introBox{
+        top: 99%;
+    }
     .hero{
         padding-bottom: 400px;
     }
@@ -158,6 +166,7 @@ time{
 /* -------------------------------------------------------------------------------------section-service */
 .container{
     width: 80%;
+    overflow: auto;
     margin-left: auto;
     margin-right: auto;
 }

@@ -1,3 +1,8 @@
+AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000 // values from 0 to 3000, with step 50ms
+      })
 /*收合的function 參考GPT*/
 function toggleText(contentId, buttonId) {
   const content = document.getElementById(contentId);
