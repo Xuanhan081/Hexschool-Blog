@@ -14,8 +14,6 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/jquery-3.7.1.min.js"></script>
-    <script src="JS/all.js"></script>
     <title>Alyse's Blog</title>
 </head>
 <body>
@@ -104,10 +102,10 @@
             </div>
             <div class="container container-lg">
                 <div class="blog-swiper">
-                    <a href="#" class="arrow arrow-left"><i class="bi bi-arrow-left-circle-fill"></i></a>
-                    <div class="card-list">
+                    <button class="arrow arrow-left" id="arrow-left" onclick="slideLeft()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <div class="card-list" id="blogSwiper">
                         <ul>
-                            <li class="card">
+                            <li class="card" id="card-1">
                                 <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
                                 <div class="info">
                                     <time>2025/05/13</time>
@@ -119,7 +117,7 @@
                                 </div>
                                 <button class ="btn_read" id="btnread1" onclick="toggleText('blogcontent1', 'btnread1')">閱讀全文</button>
                             </li>
-                            <li class="card">
+                            <li class="card" id="card-2">
                                 <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
                                 <div class="info">
                                     <time>2025/05/13</time>
@@ -131,7 +129,7 @@
                                 </div>
                                 <button class ="btn_read" id="btnread2" onclick="toggleText('blogcontent2', 'btnread2')">閱讀全文</button>
                             </li>
-                            <li class="card">
+                            <li class="card" id="card-3">
                                 <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
                                 <div class="info">
                                     <time>2025/05/13</time>
@@ -143,15 +141,63 @@
                                 </div>
                                 <button class ="btn_read" id="btnread3" onclick="toggleText('blogcontent3', 'btnread3')">閱讀全文</button>
                             </li>
+                            <li class="card" id="card-4">
+                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent4" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread4" onclick="toggleText('blogcontent4', 'btnread4')">閱讀全文</button>
+                            </li>
+                            <li class="card" id="card-5">
+                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent5" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread5" onclick="toggleText('blogcontent5', 'btnread5')">閱讀全文</button>
+                            </li>
+                            <li class="card" id="card-6">
+                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent6" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread6" onclick="toggleText('blogcontent6', 'btnread6')">閱讀全文</button>
+                            </li>
+                            <li class="card" id="card-7">
+                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent7" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread7" onclick="toggleText('blogcontent7', 'btnread7')">閱讀全文</button>
+                            </li>
                         </ul>
                     </div>
-                    <a href="#" class="arrow arrow-right"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                    <button class="arrow arrow-right" id="arrow-right" onclick="slideRight()"><i class="bi bi-arrow-right-circle-fill"></i></button>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>部落格精選</h2>
+                <h2>職涯諮詢成功案例</h2>
             </div>
         </section>
         <footer></footer>
@@ -162,5 +208,7 @@
     <script>
     AOS.init();
     </script>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/all.js"></script>
 </body>
 </html>

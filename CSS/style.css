@@ -215,7 +215,7 @@ time{
 /* -------------------------------------------------------------------------------------section-service */
 /* -------------------------------------------------------------------------------------section-blog */
 .container-lg{
-    width: 95%;
+    width: 100%;
 }
 .blog-swiper{
     display: flex;
@@ -223,28 +223,39 @@ time{
     align-items: center;
     position: relative;
     width: 100%;
-    max-width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card-list{
-    width: 90%;
+    width: 80%;
+    max-width: 1420px;
+    overflow: hidden; /* 隱藏多餘內容 */
 }
 .arrow {
-    width: 5%;
+    width: 10%;
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     color: var(--color-primary);
+    opacity: 1;
+}
+#arrow-left,#arrow-right{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 .card-list ul{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    gap: 25px;/*比justify-content: space-between好原因是當一排不滿三個card排版奇怪*/
-    /* flex-wrap: wrap; */
+    gap: 25px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    flex-wrap: nowrap; /* 不換行，讓它橫向排列 */
 }
-.card{
+.card-list li.card{
     box-sizing: border-box;
-    width: 33%;
+    flex: 0 0 calc(100% / 3 - 20px); /* 每張卡片佔 1/3 寬度 */
     margin-bottom: 30px;
 }
 .card img{
