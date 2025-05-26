@@ -1,6 +1,9 @@
 :root{
 	--color-primary: #0027D5;
 }
+*{
+    box-sizing: border-boxs;
+}
 /*---元素style---*/
 body {
     font-family: 'Noto Sans TC', sans-serif;
@@ -211,13 +214,27 @@ time{
 }
 /* -------------------------------------------------------------------------------------section-service */
 /* -------------------------------------------------------------------------------------section-blog */
-.blogshow{
+.container-lg{
+    width: 95%;
+}
+.blog-swiper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 100%;
+    max-width: 1296px;
 }
-.selectBlog ul{
+.card-list{
+    width: 90%;
+}
+.arrow {
+    width: 5%;
+    text-align: center;
+    font-size: 35px;
+    color: var(--color-primary);
+}
+.card-list ul{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -226,7 +243,8 @@ time{
     /* flex-wrap: wrap; */
 }
 .card{
-    width: 32%;
+    box-sizing: border-box;
+    width: 33%;
     margin-bottom: 30px;
 }
 .card img{
@@ -270,21 +288,6 @@ time{
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
     overflow: visible;
-}
-.arrow {
-    position: absolute;
-    top: 50%;             /* 垂直置中 */
-    transform: translateY(-50%);
-    font-size: 35px;
-    z-index: 10;
-}
-/* 左箭頭在容器左邊「外面」 */
-.arrow-left {
-    left: -50px;
-}
-/* 右箭頭在容器右邊「外面」 */
-.arrow-right {
-    right: -50px;
 }
 
 @media (max-width: 992px) {
