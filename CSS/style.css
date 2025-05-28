@@ -25,7 +25,7 @@ h1{
 h2{
     font-size: 64px;
     font-weight: bold;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
 }
 h3 {
     font-size: 28px;
@@ -134,7 +134,7 @@ time{
 }
 @media (max-width: 992px) {
     .hero h1{
-        font-size: 52px;
+        font-size: 120px;
     }
     .text-overlay{
         width: 100%;
@@ -159,6 +159,9 @@ time{
     }
 }
 @media(max-width: 767px){
+    .hero h1{
+        font-size: 52px;
+    }
     .introBox{
         top: 99%;
     }
@@ -271,7 +274,7 @@ time{
 .info{
     padding: 0;
 }
-.btn_read{
+.btn_read,.btn-consult{
     background: #ffffff;
     background-color: 2px solid
     black;
@@ -321,4 +324,62 @@ time{
     
 }
 /* -------------------------------------------------------------------------------------section-blog */
+/* -------------------------------------------------------------------------------------section-consult */
+.consult-board{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.box-pic{
+    width: 83%;
+    padding: 0;
+}
+.box-text{
+    width: 56%;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 50%;
+}
+.box-text > .b-top,.b-down{
+    width: 100%;
+    display: flex;
+}
+.b-top{
+    position: relative;
+}
+.b-down{
+    justify-content: end;
+    position: absolute;
+    top: 90%;
+}
+.focus-pic{
+    width: 70%;
+    border: 24px solid #EDEDED;
+}
+.box-w,.box-g{
+    width: 70%;
+    padding: 80px 40px 80px 40px;
+}
+.box-w{
+    background: #ffffff;
+}
+.box-w span{
+    color: var(--color-primary);
+}
+.box-g{
+    background: #F5F5F5;
+}
+.btn-consult{
+    background: #ffffff;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.btn-consult:hover{
+    background: var(--color-primary);
+    color: #ffffff;
+}
+/* -------------------------------------------------------------------------------------section-consult */
 
