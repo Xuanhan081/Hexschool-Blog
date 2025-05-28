@@ -71,11 +71,11 @@ section{
 }
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
-.hero{
+.hero,.sub-hero{
     display: flex;
     height: 100vh;
     position: relative;
-    padding-bottom: 320px; /* 根據 introBox 的高度調整 */
+    padding-bottom: 300px; /* 根據 introBox 的高度調整 */
     padding-top: 100px;
 }
 
@@ -421,7 +421,7 @@ section{
 }
 /* -------------------------------------------------------------------------------------section-consult */
 /* -------------------------------------------------------------------------------------section-subscribe */
-.hero{
+.sub-hero{
     padding-bottom: 80px;
 }
 .sub-self-hero{
