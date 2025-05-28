@@ -1,5 +1,5 @@
 AOS.init({
-        offset: 450, // offset (in px) from the original trigger point
+        offset: 200, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 2000 // values from 0 to 3000, with step 50ms
       })
@@ -20,7 +20,6 @@ function slideLeft() {
 }
 
 function slideRight() {
-    debugger; // Add this line
     if (currentIndex < cards.length - cardsPerView) {
         currentIndex++;
         updateSlider();
