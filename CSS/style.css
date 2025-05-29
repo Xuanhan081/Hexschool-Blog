@@ -42,6 +42,7 @@ time{
 }
 section{
     padding-bottom: 80px;
+    box-sizing: border-box;
 }
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
@@ -75,7 +76,7 @@ section{
     display: flex;
     height: 100vh;
     position: relative;
-    margin-bottom: 200px; /* 根據 introBox 的高度調整 */
+    margin-bottom: 300px; /* 根據 introBox 的高度調整 */
 }
 .hero{
     padding-top: 100px;
@@ -110,7 +111,7 @@ section{
     z-index: 9;
     font-size: 28px;
     position: absolute;
-    bottom: 0%; /* 使 introBox 上推%，有一部份蓋住 hero */
+    bottom: -20%; /* 使 introBox 上推%，有一部份蓋住 hero */
     left: 40%; /* 向左靠齊，留40%空間 */
 }
 .social{
@@ -146,6 +147,8 @@ section{
     }
     .self-hero, .text-hero,.sub-self-hero,.sub-text-hero{
         width: 100%;
+    }
+    .self-hero,.sub-self-hero{
         min-height: 520px;
     }
     .text-hero{
@@ -153,7 +156,7 @@ section{
         padding-top: 20px;
     }
     .introBox{
-        bottom: -40%;
+        bottom: -30%;
         left: 5%;
         right: 5%;
         padding: 40px 20px 40px 20px;
@@ -161,7 +164,7 @@ section{
 }
 @media(max-width: 767px){
     .hero{
-        margin-bottom: 400px;
+        margin-bottom: 600px;
     }
     .hero h1{
         font-size: 52px;
@@ -170,7 +173,10 @@ section{
         font-size: 48px;
     }
     .introBox{
-        bottom: -60%;
+        bottom: -70%;
+    }
+    .social-li{
+        gap: 8px;
     }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
