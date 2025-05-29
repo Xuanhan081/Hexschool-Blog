@@ -166,6 +166,9 @@ section{
     .hero{
         margin-bottom: 600px;
     }
+    .sub-hero{
+        margin-bottom: 100px;
+    }
     .hero h1{
         font-size: 52px;
     }
