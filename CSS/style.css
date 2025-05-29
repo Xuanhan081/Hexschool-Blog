@@ -169,9 +169,6 @@ section{
     .hero{
         margin-bottom: 600px;
     }
-    .sub-hero{
-        margin-bottom: 200px;
-    }
     .hero h1{
         font-size: 52px;
     }
@@ -504,7 +501,7 @@ section{
 /* -------------------------------------------------------------------------------------section-consult */
 /* -------------------------------------------------------------------------------------section-subscribe */
 .sub-hero{
-    padding-bottom: 80px;
+    margin-bottom: 200px;
 }
 .sub-self-hero{
     background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png');
