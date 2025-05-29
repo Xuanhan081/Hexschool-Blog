@@ -518,6 +518,11 @@ section{
     margin-bottom: 20px;
     font-size: 18px;
 }
+@media (max-width:992px){
+    .sub-overlay{
+        padding: 40px 20px 40px 20px;
+    }
+}
 /* -------------------------------------------------------------------------------------section-subscribe */
 /* -------------------------------------------------------------------------------------section-contact */
 .contact-item i{
@@ -534,5 +539,11 @@ section{
 }
 .contact-item a h3 img{
     width: 50px;
+}
+@media (max-width:767px){
+    .contact-item{
+        flex-direction: column;
+        align-items: start;
+    }
 }
 /* -------------------------------------------------------------------------------------section-contact */
