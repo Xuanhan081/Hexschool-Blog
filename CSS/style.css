@@ -76,10 +76,13 @@ section{
     display: flex;
     height: 100vh;
     position: relative;
-    margin-bottom: 300px; /* 根據 introBox 的高度調整 */
+    margin-bottom: 200px; /* 根據 introBox 的高度調整 */
 }
 .hero{
     padding-top: 100px;
+}
+.sub-hero{
+    margin-bottom: 50px;
 }
 /* 左右背景圖 */
 .self-hero, .text-hero,.sub-self-hero,.sub-text-hero{
