@@ -102,7 +102,6 @@
             </div>
             <div class="container container-lg" data-aos="zoom-in">
                 <div class="blog-swiper">
-                    <button class="arrow arrow-left" id="arrow-left" onclick="slideLeft()"><i class="bi bi-arrow-left-circle-fill"></i></button>
                     <div class="card-list" id="blogSwiper">
                         <ul>
                             <li class="card" id="card-1">
@@ -191,7 +190,10 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="arrow arrow-right" id="arrow-right" onclick="slideRight()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                    <div class="swipe-controls">
+                        <button class="arrow arrow-left" id="arrow-left" onclick="slideLeft()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                        <button class="arrow arrow-right" id="arrow-right" onclick="slideRight()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                    </div>
                 </div>
             </div>
         </section>
