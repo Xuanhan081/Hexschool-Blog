@@ -111,7 +111,7 @@ section{
     z-index: 9;
     font-size: 28px;
     position: absolute;
-    bottom: -20%; /* 使 introBox 上推%，有一部份蓋住 hero */
+    top: 75%; /* 使 introBox 下推%，有一部份蓋住 hero */
     left: 40%; /* 向左靠齊，留40%空間 */
 }
 .social{
@@ -156,7 +156,7 @@ section{
         padding-top: 20px;
     }
     .introBox{
-        bottom: -30%;
+        top: 85%;
         left: 5%;
         right: 5%;
         padding: 40px 20px 40px 20px;
@@ -164,10 +164,10 @@ section{
 }
 @media(max-width: 767px){
     .hero{
-        margin-bottom: 600px;
+        margin-bottom: 200px;
     }
     .sub-hero{
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
     .hero h1{
         font-size: 52px;
@@ -176,7 +176,7 @@ section{
         font-size: 48px;
     }
     .introBox{
-        bottom: -70%;
+        top: 80%;
     }
     .social-li{
         gap: 8px;
