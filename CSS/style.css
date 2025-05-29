@@ -167,7 +167,7 @@ section{
 }
 @media(max-width: 767px){
     .hero{
-        margin-bottom: 200px;
+        margin-bottom: 600px;
     }
     .sub-hero{
         margin-bottom: 10px;
@@ -179,7 +179,7 @@ section{
         font-size: 48px;
     }
     .introBox{
-        top: 80%;
+        top: 99%;
     }
     .social-li{
         gap: 8px;
