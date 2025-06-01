@@ -135,7 +135,7 @@ section{
 }
 @media (max-width: 992px) {
     .hero{
-        margin-bottom: 300px;
+        margin-bottom: 600px;
     }
     .hero h1{
         font-size: 80px;
@@ -157,9 +157,10 @@ section{
     .text-hero{
         align-items: flex-start;
         padding-top: 20px;
+        min-height: 230px;
     }
     .introBox{
-        top: 85%;
+        top: 135%;
         left: 5%;
         right: 5%;
         padding: 40px 20px 40px 20px;
@@ -167,7 +168,7 @@ section{
 }
 @media(max-width: 767px){
     .hero{
-        margin-bottom: 600px;
+        margin-bottom: 650px;
     }
     .hero h1{
         font-size: 52px;
@@ -176,7 +177,7 @@ section{
         font-size: 48px;
     }
     .introBox{
-        top: 99%;
+        top: 135%;
     }
     .social-li{
         gap: 8px;
@@ -531,6 +532,9 @@ section{
     .sub-overlay{
         padding: 40px 20px 40px 20px;
     }
+    .sub-hero{
+    margin-bottom: 300px;
+}
 }
 /* -------------------------------------------------------------------------------------section-subscribe */
 /* -------------------------------------------------------------------------------------section-contact */
