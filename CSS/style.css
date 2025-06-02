@@ -565,6 +565,9 @@ section{
 .contact-item a h3 img{
     width: 50px;
 }
+.contact-list ul li{
+    transition: transform 0.3s ease; /* 加上平滑效果 */
+}
 .contact-list ul li:hover{
     transform: translateY(-5px);
 }
