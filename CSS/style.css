@@ -116,6 +116,10 @@ section{
     position: absolute;
     top: 75%; /* 使 introBox 下推%，有一部份蓋住 hero */
     left: 40%; /* 向左靠齊，留40%空間 */
+    transition: transform 0.3s ease; /* 加上平滑效果 */
+}
+.introBox:hover{
+    transform: translateX(-10px);
 }
 .social{
     margin-top: 20px;
@@ -127,6 +131,10 @@ section{
     justify-content: space-around;
     gap: 19px;
     list-style-type: none;
+    transition: transform 0.3s ease; /* 加上平滑效果 */
+}
+.social-li img:hover{
+    transform: scale(1.2) translateY(-2px);
 }
 @media(max-width: 1450px){
     .hero h1{
@@ -232,6 +240,10 @@ section{
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s ease; /* 加上平滑效果 */
+}
+.service-bottom:hover{
+    transform: translateX(-10px);
 }
 .service-bottom i{
     font-size: 35px;
@@ -552,6 +564,9 @@ section{
 }
 .contact-item a h3 img{
     width: 50px;
+}
+.contact-list ul li:hover{
+    transform: translateY(-5px);
 }
 @media (max-width:767px){
     .contact-item{
