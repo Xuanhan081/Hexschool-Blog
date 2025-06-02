@@ -4,7 +4,7 @@ AOS.init({
         duration: 1800 // values from 0 to 3000, with step 50ms
       })
 
-// all.js
+
 
 // 👇 定義在全域中
 let currentIndex = 0;
