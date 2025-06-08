@@ -48,6 +48,9 @@ section{
 }
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
+.wrap{
+    max-width: 4800px;
+}
 .navbar{
     position: fixed;
     z-index: 999;
@@ -139,11 +142,17 @@ section{
     transform: scale(1.2) translateY(-2px);
 }
 @media(max-width: 1450px){
+    .wrap{
+        max-width: 1450px;
+    }
     .hero h1{
         font-size: 80px;
     }
 }
 @media (max-width: 992px) {
+    .wrap{
+        max-width: 992px;
+    }
     .hero{
         margin-bottom: 600px;
     }
@@ -177,6 +186,9 @@ section{
     }
 }
 @media(max-width: 767px){
+    .wrap{
+        max-width: 767px;
+    }
     .hero{
         margin-bottom: 650px;
     }
@@ -193,11 +205,16 @@ section{
         gap: 8px;
     }
 }
+@media (max-width: 350px) {
+    .wrap{
+        max-width: 350px;
+    }
+}
 /* -------------------------------------------------------------------------------------section-home1 */
 /* -------------------------------------------------------------------------------------section-service */
 .container{
     width: 80%;
-    /* overflow: auto; */
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -207,6 +224,9 @@ section{
 }
 .mainCol{
     justify-content: center;
+    max-width: 905px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .serviceBox1,.serviceBox2{
     width: 95%;
@@ -298,7 +318,7 @@ section{
 .card-list{
     width: 80%;
     max-width: 1480px;
-    /*overflow: hidden;  隱藏多餘內容 */
+    overflow: hidden;  /* 隱藏多餘內容 */
     margin-left: auto;
     margin-right: auto;
 }
@@ -598,3 +618,9 @@ footer{
 /* footer>.h4{
     font-weight: bold;
 } */
+ 
+@media (max-width: 900px) {
+    .container{
+        max-width: 890px;
+    }
+}
