@@ -49,7 +49,7 @@ time{
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
 .wrap{
-    max-width: 4800px;
+    max-width: 100%;
 }
 .navbar{
     position: fixed;
@@ -142,9 +142,6 @@ time{
     transform: scale(1.2) translateY(-2px);
 }
 @media(max-width: 1450px){
-    .wrap{
-        max-width: 1450px;
-    }
     .hero h1{
         font-size: 80px;
     }
@@ -186,9 +183,6 @@ time{
     }
 }
 @media(max-width: 767px){
-    .wrap{
-        max-width: 767px;
-    }
     .hero{
         margin-bottom: 650px;
     }
@@ -203,11 +197,6 @@ time{
     }
     .social-li{
         gap: 8px;
-    }
-}
-@media (max-width: 350px) {
-    .wrap{
-        max-width: 350px;
     }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
@@ -317,7 +306,6 @@ time{
 }
 .card-list{
     width: 80%;
-    max-width: 1480px;
     overflow: hidden;  /* 隱藏多餘內容 */
     margin-left: auto;
     margin-right: auto;
@@ -622,8 +610,3 @@ footer{
     font-weight: bold;
 } */
  
-@media (max-width: 900px) {
-    .container{
-        max-width: 890px;
-    }
-}
