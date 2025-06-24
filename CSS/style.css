@@ -83,6 +83,7 @@ time{
 }
 .hero{
     padding-top: 100px;
+    z-index: 100;
 }
 .sub-hero{
     margin-bottom: 50px;
@@ -114,7 +115,7 @@ time{
     max-width: 1060px;
     padding: 65px 40px 65px 40px;
     background: #ffffff;
-    z-index: 9999;
+    z-index: 199;
     font-size: 28px;
     margin-top: -120px;
     margin-left: auto;
@@ -147,9 +148,6 @@ time{
     .wrap{
         max-width: 992px;
     }
-    .hero{
-        margin-bottom: 600px;
-    }
     .hero h1{
         font-size: 80px;
     }
@@ -172,25 +170,13 @@ time{
         padding-top: 20px;
         min-height: 230px;
     }
-    .introBox{
-        top: 135%;
-        left: 5%;
-        right: 5%;
-        padding: 40px 20px 40px 20px;
-    }
 }
 @media(max-width: 767px){
-    .hero{
-        margin-bottom: 650px;
-    }
     .hero h1{
         font-size: 52px;
     }
     h2{
         font-size: 48px;
-    }
-    .introBox{
-        top: 135%;
     }
     .social-li{
         gap: 8px;
