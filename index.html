@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+    <!--Custom CSS-->
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Alyse's Blog</title>
 </head>
 <body>
@@ -102,35 +104,13 @@
                 <h2>部落格精選</h2>
             </div>
             <div class="container container-lg" data-aos="zoom-in">
-                <div class="blog-swiper">
-                    <div class="card-list swiper-wrapper" id="blogSwiper">
-                        <ul>
-                            <li class="card" id="card-1">
-                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
-                                <div class="info">
-                                    <time>2025/05/13</time>
-                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
-                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
-                                    <p id="blogcontent1" class="collapsed">
-                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
-                                    </p>
-                                </div>
-                                <button class ="btn_read" id="btnread1" onclick="toggleText('blogcontent1', 'btnread1')">閱讀全文</button>
-                            </li>
-                            <li class="card" id="card-2">
-                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
-                                <div class="info">
-                                    <time>2025/05/13</time>
-                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
-                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
-                                    <p id="blogcontent2" class="collapsed">
-                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
-                                    </p>
-                                </div>
-                                <button class ="btn_read" id="btnread2" onclick="toggleText('blogcontent2', 'btnread2')">閱讀全文</button>
-                            </li>
-                            <li class="card" id="card-3">
-                                <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                <!-- Slider main container -->
+                    <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper card-list">
+                        <!-- Slides -->
+                        <div class="swiper-slide card">
+                            <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
                                 <div class="info">
                                     <time>2025/05/13</time>
                                     <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
@@ -140,12 +120,53 @@
                                     </p>
                                 </div>
                                 <button class ="btn_read" id="btnread3" onclick="toggleText('blogcontent3', 'btnread3')">閱讀全文</button>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent3" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread3" onclick="toggleText('blogcontent3', 'btnread3')">閱讀全文</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent3" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread3" onclick="toggleText('blogcontent3', 'btnread3')">閱讀全文</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://i.ibb.co/MD6PwnMk/Rectangle-3-1.png" alt="">
+                                <div class="info">
+                                    <time>2025/05/13</time>
+                                    <h4><a href="#">#React</a> <a href="#">#入門基礎</a></h4>
+                                    <h3>React 入門不再迷惘 : 三步驟帶你上手核心概念</h3>
+                                    <p id="blogcontent3" class="collapsed">
+                                    你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React 到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。
+                                    </p>
+                                </div>
+                                <button class ="btn_read" id="btnread3" onclick="toggleText('blogcontent3', 'btnread3')">閱讀全文</button>
+                        </div>
                     </div>
-                    <div class="swipe-controls">
-                        <button class="arrow arrow-left" id="arrow-left" onclick="slideLeft()"><i class="bi bi-arrow-left-circle-fill"></i></button>
-                        <button class="arrow arrow-right" id="arrow-right" onclick="slideRight()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -297,7 +318,12 @@
     <script>
     AOS.init();
     </script>
+    <!-- 如果你有藥用JQuery， 可加這行 -->
     <script src="JS/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
     <script src="JS/all.js"></script>
+    <!-- 引入 Swiper 的 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/swiper.js"></script>
 </body>
 </html>
