@@ -17,44 +17,36 @@ body {
   line-height: 1.5;
   background: #FBFBFB;
 }
-
-ul {
+body ul {
   list-style-type: none;
 }
-
-a {
+body a {
   text-decoration: none;
   color: #000;
 }
-
-h1 {
+body h1 {
   font-size: 120px;
   font-weight: bold;
   color: var(--color-primary);
 }
-
-h2 {
+body h2 {
   font-size: 64px;
   font-weight: bold;
   padding: 40px 0px 20px 0px;
 }
-
-h3 {
+body h3 {
   font-size: 28px;
   padding: 15px 0px 15px 0px;
   font-family: "Noto Serif HK", serif;
 }
-
-h4 {
+body h4 {
   font-size: 24px;
   padding: 10px 0px 10px 0px;
 }
-
-time {
+body time {
   display: block;
 }
-
-.section {
+body .section {
   padding-bottom: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -62,10 +54,6 @@ time {
 
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
-.wrap {
-  max-width: 100%;
-}
-
 .navbar {
   position: fixed;
   z-index: 999;
@@ -83,8 +71,7 @@ time {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.menu {
+.container-fluid .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,14 +81,14 @@ time {
   font-size: 28px;
   font-weight: bold;
 }
-
-.menu-item a {
+.container-fluid .menu .menu-item a {
   color: #000;
 }
 
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
-.hero, .sub-hero {
+.hero,
+.sub-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,25 +99,10 @@ time {
   padding-top: 100px;
   z-index: 100;
 }
-
-.sub-hero {
-  margin-bottom: 50px;
-}
-
-/* 左右背景圖 */
-.self-hero, .text-hero, .sub-self-hero, .sub-text-hero {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.self-hero {
+.hero .self-hero {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section.png");
 }
-
-.text-hero, .sub-text-hero {
+.hero .text-hero {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,15 +111,25 @@ time {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.text-overlay {
+.hero .text-hero .text-overlay {
   padding-left: 5%;
   text-align: left;
 }
-
-.descrip {
+.hero .text-hero .text-overlay .descrip {
   color: var(--color-primary);
   font-weight: bold;
+}
+
+/* 左右背景圖 */
+.self-hero,
+.text-hero,
+.sub-self-hero,
+.sub-text-hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 .introBox {
@@ -165,13 +147,11 @@ time {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 加上平滑效果 */
 }
-
 .introBox:hover {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
-
-.social {
+.introBox .social {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,8 +160,7 @@ time {
       -ms-flex-pack: left;
           justify-content: left;
 }
-
-.social-li {
+.introBox .social-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,8 +173,7 @@ time {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 加上平滑效果 */
 }
-
-.social-li img:hover {
+.introBox .social-li img:hover {
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
@@ -206,9 +184,6 @@ time {
   }
 }
 @media (max-width: 992px) {
-  .wrap {
-    max-width: 992px;
-  }
   .hero h1 {
     font-size: 80px;
   }
@@ -217,16 +192,21 @@ time {
     padding-left: 10px;
     text-align: center;
   }
-  .hero, .sub-hero {
+  .hero,
+  .sub-hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .self-hero, .text-hero, .sub-self-hero, .sub-text-hero {
+  .self-hero,
+  .text-hero,
+  .sub-self-hero,
+  .sub-text-hero {
     width: 100%;
   }
-  .self-hero, .sub-self-hero {
+  .self-hero,
+  .sub-self-hero {
     min-height: 520px;
   }
   .text-hero {
@@ -265,7 +245,6 @@ time {
   margin-left: auto;
   margin-right: auto;
 }
-
 .container h3 {
   font-weight: bold;
 }
@@ -274,9 +253,12 @@ time {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1000px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+.mainCol img {
+  width: 70%;
 }
 
 .serviceBox1, .serviceBox2 {
@@ -293,27 +275,21 @@ time {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.serviceBox2 {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.mainCol img {
-  width: 70%;
-}
-
-.itemBoxR, .itemBoxL {
+.serviceBox1 .itemBoxR, .serviceBox1 .itemBoxL, .serviceBox2 .itemBoxR, .serviceBox2 .itemBoxL {
   width: 35%;
   background: white;
   position: absolute;
   right: 0px;
   padding: 24px;
 }
-
-.itemBoxL {
+.serviceBox1 .itemBoxL, .serviceBox2 .itemBoxL {
   left: 0;
+}
+
+.serviceBox2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .service-bottom {
@@ -333,12 +309,10 @@ time {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 加上平滑效果 */
 }
-
 .service-bottom:hover {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
-
 .service-bottom i {
   font-size: 35px;
 }
@@ -350,7 +324,8 @@ time {
   .mainCol img {
     width: 100%;
   }
-  .serviceBox1, .serviceBox2 {
+  .serviceBox1,
+  .serviceBox2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -358,7 +333,9 @@ time {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .itemBoxL, .itemBoxR {
+  .serviceBox1 .itemBoxL, .serviceBox1 .itemBoxR,
+  .serviceBox2 .itemBoxL,
+  .serviceBox2 .itemBoxR {
     position: relative;
     width: 100%;
   }
@@ -369,7 +346,7 @@ time {
   width: 90%;
   padding-top: 32px;
   padding-bottom: 38px;
-  max-width: 1280px;
+  max-width: 1580px;
   position: relative;
 }
 
@@ -391,8 +368,7 @@ time {
           transform: translate(-50%, -50%);
   position: absolute;
 }
-
-.swiper-button-custom {
+.swiper-controls .swiper-button-custom {
   font-size: 3rem;
   cursor: pointer;
   color: var(--color-primary);
@@ -402,28 +378,31 @@ time {
 
 .card-list {
   margin-bottom: 40px;
+  /*收合的class*/
 }
-
 .card-list p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 .card-list img {
   width: 100%;
   margin-bottom: 10px;
 }
-
 .card-list h3, .card-list h4 {
   padding: 0;
 }
-
-.card-list h4 a {
+.card-list h3 a, .card-list h4 a {
   color: var(--color-primary);
 }
-
-.card {
+.card-list .card {
   padding: 10px;
+}
+.card-list .collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 顯示兩行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn_read, .btn-consult {
@@ -435,24 +414,9 @@ time {
   border-radius: 100px;
   text-align: center;
 }
-
-.btn_read:hover {
+.btn_read:hover, .btn-consult:hover {
   color: white;
   background: #000;
-}
-
-/*收合的class 參考GPT*/
-.collapsed {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* 顯示兩行 */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.swiper {
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 @media (max-width: 992px) {
@@ -482,7 +446,6 @@ time {
   gap: 16px;
   font-weight: bold;
 }
-
 .consult-board p {
   display: block;
   margin-top: 24px;
@@ -493,6 +456,10 @@ time {
   width: 83%;
   padding: 0;
 }
+.box-pic .focus-pic {
+  width: 70%;
+  border: 24px solid #EDEDED;
+}
 
 .box-text {
   width: 56%;
@@ -501,45 +468,33 @@ time {
   right: 0;
   bottom: 45%;
 }
-
-.box-text > .b-top, .b-down {
+.box-text .b-top, .box-text .b-down {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.b-top {
+.box-text .b-top {
   position: relative;
 }
-
-.b-down {
+.box-text .b-down {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
   position: absolute;
   top: 90%;
 }
-
-.focus-pic {
-  width: 70%;
-  border: 24px solid #EDEDED;
-}
-
-.box-w, .box-g {
+.box-text .box-w, .box-text .box-g {
   width: 56%;
   padding: 80px 40px 80px 40px;
 }
-
-.box-w {
+.box-text .box-w {
   background: #ffffff;
 }
-
-.box-w span {
+.box-text .box-w span {
   color: var(--color-primary);
 }
-
-.box-g {
+.box-text .box-g {
   background: var(--color-ground);
 }
 
@@ -548,7 +503,6 @@ time {
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
-
 .btn-consult:hover {
   background: var(--color-primary);
   color: #ffffff;
@@ -559,7 +513,6 @@ time {
   padding: 24px;
   margin-top: 40px;
 }
-
 .podcast-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,11 +522,9 @@ time {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .podcast-list ul li {
   width: 23%;
 }
-
 .podcast-list hr {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -592,18 +543,16 @@ time {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .podcast-item i {
   color: var(--color-primary);
   margin-right: 10px;
 }
-
 .podcast-item img {
   width: 80px;
 }
 
 @media (max-width: 1440px) {
-  .box-w, .box-g {
+  .box-text .box-w, .box-text .box-g {
     width: 80%;
     padding: 40px 20px 40px 20px;
   }
@@ -615,13 +564,19 @@ time {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .box-text, .b-down {
+  .box-text {
     position: relative;
   }
-  .box-pic, .box-text, .focus-pic, .b-top, .b-down, .box-g, .box-w {
+  .box-text .b-down {
+    position: relative;
+  }
+  .box-pic, .box-text {
     width: 100%;
   }
-  .focus-pic {
+  .box-pic .box-w, .box-pic .box-g, .box-pic .focus-pic, .box-pic .b-top, .box-pic .b-down, .box-text .box-w, .box-text .box-g, .box-text .focus-pic, .box-text .b-top, .box-text .b-down {
+    width: 100%;
+  }
+  .box-pic .focus-pic, .box-text .focus-pic {
     border: 10px solid #EDEDED;
   }
   .podcast-list ul li {
@@ -639,32 +594,29 @@ time {
 .sub-hero {
   margin-bottom: 100px;
 }
-
-.sub-self-hero {
-  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png");
-}
-
-.sub-text-hero {
+.sub-hero .sub-text-hero {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sub-hero .sub-self-hero {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png");
 }
 
 .sub-overlay {
   padding: 80px;
   background: #ffffff;
 }
-
 .sub-overlay h4 span {
   color: var(--color-primary);
 }
-
 .sub-overlay input {
   display: block;
   background: var(--color-ground);
@@ -682,10 +634,6 @@ time {
 }
 /* -------------------------------------------------------------------------------------section-subscribe */
 /* -------------------------------------------------------------------------------------section-contact */
-.contact-item i {
-  font-size: 30px;
-}
-
 .contact-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,7 +645,9 @@ time {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.contact-item i {
+  font-size: 30px;
+}
 .contact-item a h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,7 +656,6 @@ time {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .contact-item a h3 img {
   width: 50px;
 }
@@ -717,7 +666,6 @@ time {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 加上平滑效果 */
 }
-
 .contact-list ul li:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
