@@ -172,7 +172,7 @@ time{
         min-height: 230px;
     }
     .introBox{
-        margin-top: -30px;
+        margin-top: 80px;
         width: 90%;
         margin-right: auto;
     }
@@ -188,7 +188,7 @@ time{
         gap: 8px;
     }
     .introBox{
-        margin-top: -40px;
+        margin-top: 20px;
     }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
