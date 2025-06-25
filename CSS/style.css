@@ -274,13 +274,32 @@ time{
 /* -------------------------------------------------------------------------------------section-service */
 /* -------------------------------------------------------------------------------------section-blog */
 .container-lg{
-    width: 80%;
+    width: 90%;
     padding-top: 32px;
     padding-bottom: 38px;
+    max-width: 1280px;
+    position: relative;
 }
 .swiper-wrapper{
-    width: 95%;
+    width: 90%;
 }
+.swiper-controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.swiper-button-custom {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  z-index: 299;
+  padding: 10px;
+}
+
 .card-list{
     margin-bottom: 40px;
 }
@@ -323,16 +342,20 @@ time{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.expanded {
-    display: block;
-    -webkit-line-clamp: unset;
-    -webkit-box-orient: unset;
-    overflow: visible;
+.swiper{
+    padding-left: 100px;
+    padding-right: 100px;
 }
-/* @media (max-width:992px) {
+@media (max-width:992px) {
+    .swiper-controls{
+        width: 80%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .swiper-wrapper{
+        width: 95%;
+    }
 }
-@media (max-width:767px) {
-} */
 /* -------------------------------------------------------------------------------------section-blog */
 /* -------------------------------------------------------------------------------------section-consult */
 .consult-board{

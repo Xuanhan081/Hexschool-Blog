@@ -3,11 +3,23 @@
     loop: true,
     slidesPerView: 3,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.button-next',
+      prevEl: '.button-prev'
     },
     pagination: {
       el: '.swiper-pagination',
       clickable: true
+    },
+    breakpoints: {
+    // 小於 992px：顯示 2 個
+    0: {
+      slidesPerView: 1
+    },
+    850: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
     }
+}
   });
