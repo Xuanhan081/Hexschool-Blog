@@ -46,6 +46,13 @@ body {
         box-sizing: border-box;
     }
 }
+@media (max-width:767px) {
+    body{
+        h2{
+            font-size: 48px;
+        }
+    }
+}
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
 .navbar{
@@ -199,15 +206,9 @@ body {
   .hero h1 {
     font-size: 52px;
   }
-
-  h2 {
-    font-size: 48px;
-  }
-
   .social-li {
     gap: 8px;
   }
-
   .introBox {
     margin-top: -50px;
     width: 90%;
