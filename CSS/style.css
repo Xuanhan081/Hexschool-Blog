@@ -112,12 +112,13 @@ time{
 }
 .introBox{
     width: auto;
+    position: relative; /* 加這一行 */
     max-width: 1060px;
     padding: 65px 40px 65px 40px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
     z-index: 199;
     font-size: 28px;
-    margin-top: -120px;
+    margin-top: -220px;
     margin-left: auto;
     transition: transform 0.3s ease; /* 加上平滑效果 */
 }
@@ -170,6 +171,11 @@ time{
         padding-top: 20px;
         min-height: 230px;
     }
+    .introBox{
+        margin-top: -30px;
+        width: 90%;
+        margin-right: auto;
+    }
 }
 @media(max-width: 767px){
     .hero h1{
@@ -180,6 +186,9 @@ time{
     }
     .social-li{
         gap: 8px;
+    }
+    .introBox{
+        margin-top: -40px;
     }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
@@ -545,9 +554,6 @@ time{
     .sub-overlay{
         padding: 40px 20px 40px 20px;
     }
-    .sub-hero{
-    margin-bottom: 300px;
-}
 }
 /* -------------------------------------------------------------------------------------section-subscribe */
 /* -------------------------------------------------------------------------------------section-contact */
