@@ -48,8 +48,14 @@ body {
 }
 @media (max-width:767px) {
     body{
+        h1{
+            font-size: 80px;
+        }
         h2{
-            font-size: 48px;
+            font-size: 42px;
+        }
+        h3{
+            font-size: 22px;
         }
     }
 }
@@ -74,9 +80,9 @@ body {
             color:#000;
             font-size: 28px;
             font-weight: bold;
-                .menu-item a{
-                    color: #000;
-                }
+            .menu-item a{
+                color: #000;
+            }
         }
     }
 
@@ -97,14 +103,13 @@ body {
         background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png');
         display: flex;
         align-items: center;
-
-        .text-overlay{
-            padding-left: 5%;
-            text-align: left;
-            .descrip{
-                color: var(--color-primary);
-                font-weight: bold;
-            }
+    }
+    .text-overlay{
+        padding-left: 5%;
+        text-align: left;
+        .descrip{
+            color: var(--color-primary);
+            font-weight: bold;
         }
     }
 }
@@ -127,6 +132,7 @@ body {
     z-index: 199;
     font-size: 28px;
     margin-top: -220px;
+    margin-bottom: auto;
     margin-left: auto;
     transition: transform 0.3s ease; /* 加上平滑效果 */
 
@@ -189,15 +195,15 @@ body {
     min-height: 520px;
   }
 
-  .text-hero {
-    align-items: flex-start;
+  .hero .text-hero {
+    align-items: start;
     padding-top: 20px;
     min-height: 230px;
   }
 
   .introBox {
     margin-top: -30px;
-    width: 100%;
+    width: 90%;
     margin-right: auto;
   }
 }
@@ -211,7 +217,6 @@ body {
   }
   .introBox {
     margin-top: -50px;
-    width: 90%;
   }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
@@ -376,7 +381,7 @@ body {
 // ==========================
 // Media Queries
 // ==========================
-@media (max-width:992px) {
+@media (max-width:767px) {
     .swiper-controls{
         width: 80%;
         position: relative;
@@ -384,6 +389,11 @@ body {
     }
     .swiper-wrapper{
         width: 95%;
+    }
+}
+@media (max-width:680px) {
+    .container-lg{
+    width: 100%;
     }
 }
 /* -------------------------------------------------------------------------------------section-blog */
