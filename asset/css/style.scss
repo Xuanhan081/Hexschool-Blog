@@ -46,6 +46,19 @@ body {
         box-sizing: border-box;
     }
 }
+@media (max-width:860px){
+    body{
+        h1{
+            font-size: 100px;
+        }
+        h2{
+            font-size: 52px;
+        }
+        h3{
+            font-size: 26px;
+        }
+    }
+}
 @media (max-width:767px) {
     body{
         h1{
