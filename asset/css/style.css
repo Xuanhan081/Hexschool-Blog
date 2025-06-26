@@ -107,6 +107,10 @@ body .section {
   color: #000;
 }
 
+.menu-item a:active {
+  color: var(--color-primary);
+}
+
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
 .hero,
@@ -403,9 +407,22 @@ body .section {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.card-list img {
+.card-list .blogpic {
   width: 100%;
-  margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 動畫效果 */
+}
+.card-list .blogpic:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+}
+.card-list .blogpic-wrap {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 .card-list h3, .card-list h4 {
   padding: 0;

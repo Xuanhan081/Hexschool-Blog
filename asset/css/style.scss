@@ -98,7 +98,9 @@ body {
             }
         }
     }
-
+    .menu-item a:active{
+        color: var(--color-primary);
+    }
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
 .hero,
@@ -354,9 +356,18 @@ body {
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    img{
+    .blogpic{
         width: 100%;
-        margin-bottom: 10px;
+        transition: transform 0.3s ease; /* 動畫效果 */
+    }
+    .blogpic:hover {
+      transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+    }
+    .blogpic-wrap{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
     }
     h3,h4{
         padding: 0;
@@ -376,6 +387,7 @@ body {
         text-overflow: ellipsis;
     }
 }
+
 .btn_read,.btn-consult{
     background: #ffffff;
     background-color: 2px solid
