@@ -36,18 +36,15 @@ body h2 {
 }
 body h3 {
   font-size: 28px;
-  padding: 15px 0px 15px 0px;
   font-family: "Noto Serif HK", serif;
 }
 body h4 {
-  font-size: 24px;
-  padding: 10px 0px 10px 0px;
+  font-size: 26px;
 }
 body time {
   display: block;
 }
 body .section {
-  padding-bottom: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -86,27 +83,111 @@ body .section {
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
 .hero {
-  width: 100%;
+  border-top: 1px solid #000;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  padding-top: 100px;
-  z-index: 100;
+}
+.hero .self-hero,
+.hero .text-hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+.hero .self-hero {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section.png");
+}
+.hero .text-hero {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .text-overlay {
+  padding-left: 5%;
+  text-align: left;
+}
+.hero .text-overlay .descrip {
+  color: var(--color-primary);
+  font-weight: bold;
 }
 
 .pic-hero {
   width: 50%;
+  height: 60vh;
   overflow: hidden;
 }
 .pic-hero .blogpic {
-  width: 100%;
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 動畫效果 */
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .pic-hero .blogpic:hover {
   -webkit-transform: scale(1.1) rotate(2deg);
-          transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+          transform: scale(1.1) rotate(2deg);
+}
+
+.info-hero {
+  width: 50%;
+  height: 60vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*收合的class*/
+}
+.info-hero p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.info-hero h3 {
+  font-weight: bold;
+}
+.info-hero h4 a {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+.info-hero .collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 顯示兩行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn_read {
+  background: #ffffff;
+  background-color: 2px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 100px;
+  text-align: center;
+}
+.btn_read:hover {
+  color: white;
+  background: #000;
+}
+
+/* -------------------------------------------------------------------------------------footer */
+footer {
+  border: 2px solid var(--color-ground);
+  text-align: center;
+  padding: 24px;
 }
