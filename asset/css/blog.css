@@ -141,7 +141,7 @@ body .section {
   }
   .hero .self-hero,
   .hero .text-hero,
-  .hero .pic-hero,
+  .hero .pic-hero, .hero .blogpic,
   .hero .info-hero {
     width: 100%;
   }
