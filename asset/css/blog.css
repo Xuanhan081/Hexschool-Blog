@@ -119,6 +119,48 @@ body .section {
   font-weight: bold;
 }
 
+@media (max-width: 1450px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+  .text-overlay {
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .self-hero,
+  .hero .text-hero,
+  .hero .pic-hero,
+  .hero .info-hero {
+    width: 100%;
+  }
+  .self-hero {
+    min-height: 520px;
+  }
+  .hero .text-hero {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-top: 20px;
+    min-height: 230px;
+  }
+}
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 52px;
+  }
+}
 .pic-hero {
   width: 50%;
   height: 60vh;

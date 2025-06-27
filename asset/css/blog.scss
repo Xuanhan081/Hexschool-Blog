@@ -98,7 +98,54 @@ body {
         }
     }
 }
+// ==========================
+// Media Queries
+// ==========================
+@media (max-width: 1450px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+}
 
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .text-overlay {
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .hero{
+    flex-direction: column;
+    .self-hero,
+    .text-hero,
+    .pic-hero,
+    .info-hero{
+        width: 100%;
+    }
+  }
+
+  
+
+  .self-hero{
+    min-height: 520px;
+  }
+
+  .hero .text-hero {
+    align-items: start;
+    padding-top: 20px;
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 52px;
+  }
+}
 .pic-hero {
     width: 50%;
     height: 60vh;
