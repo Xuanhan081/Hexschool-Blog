@@ -103,13 +103,6 @@ body .section {
   font-size: 28px;
   font-weight: bold;
 }
-.container-fluid .menu .menu-item a {
-  color: #000;
-}
-
-.menu-item a:active {
-  color: var(--color-primary);
-}
 
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */

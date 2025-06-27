@@ -1,0 +1,92 @@
+:root{
+	--color-primary: #0027D5;
+    --color-ground: #f5f5f5;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*---元素style---*/
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    background: #FBFBFB;
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    h1{
+        font-size: 120px;
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+    h2{
+        font-size: 64px;
+        font-weight: bold;
+        padding: 40px 0px 20px 0px;
+    }
+    h3 {
+        font-size: 28px;
+        padding: 15px 0px 15px 0px;
+        font-family: "Noto Serif HK", serif;
+    }
+    h4{
+        font-size: 24px;
+        padding: 10px 0px 10px 0px;
+    }
+    time{
+        display: block;
+    }
+    .section{
+        padding-bottom: 80px;
+        box-sizing: border-box;
+    }
+}
+.navbar{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        background: #FBFBFB;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    .menu{
+        display: flex;
+        gap: 24px;
+        list-style-type: none;
+        color:#000;
+        font-size: 28px;
+        font-weight: bold;
+        .menu-item a{
+            color: #000;
+        }
+    }
+}
+/* -------------------------------------------------------------------------------------header */
+/* -------------------------------------------------------------------------------------section-home1 */
+.hero{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    padding-top: 100px;
+    z-index: 100;
+}
+.pic-hero{
+    width: 50%;
+    overflow: hidden;
+    .blogpic{
+        width: 100%;
+        transition: transform 0.3s ease; /* 動畫效果 */
+    }
+    .blogpic:hover {
+      transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+    }
+}
