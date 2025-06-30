@@ -99,6 +99,10 @@ body .section {
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
 .hero {
+  padding-top: 100px;
+}
+
+.hero, .sub-hero {
   border-top: 1px solid #000;
   z-index: 100;
   display: -webkit-box;
@@ -107,17 +111,18 @@ body .section {
   height: 100vh;
 }
 .hero .self-hero,
-.hero .text-hero {
+.hero .text-hero, .sub-hero .self-hero,
+.sub-hero .text-hero {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   background-size: cover;
   background-position: center;
 }
-.hero .self-hero {
+.hero .self-hero, .sub-hero .self-hero {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section.png");
 }
-.hero .text-hero {
+.hero .text-hero, .sub-hero .text-hero {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,11 +131,11 @@ body .section {
       -ms-flex-align: center;
           align-items: center;
 }
-.hero .text-overlay {
+.hero .text-overlay, .sub-hero .text-overlay {
   padding-left: 5%;
   text-align: center;
 }
-.hero .text-overlay .descrip {
+.hero .text-overlay .descrip, .sub-hero .text-overlay .descrip {
   color: var(--color-primary);
   font-weight: bold;
 }
@@ -141,24 +146,30 @@ body .section {
   }
 }
 @media (max-width: 992px) {
-  .hero {
+  .hero, .sub-hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hero h1 {
+  .hero h1, .sub-hero h1 {
     font-size: 80px;
   }
-  .hero .text-overlay {
+  .hero .text-overlay, .sub-hero .text-overlay {
     width: 100%;
     padding-left: 10px;
   }
   .hero .self-hero,
   .hero .text-hero,
   .hero .pic-hero, .hero .blogpic,
-  .hero .info-hero {
+  .hero .info-hero, .sub-hero .self-hero,
+  .sub-hero .text-hero,
+  .sub-hero .pic-hero, .sub-hero .blogpic,
+  .sub-hero .info-hero {
     width: 100%;
+  }
+  .hero .self-hero, .sub-hero .self-hero {
+    min-height: 520px;
   }
 }
 @media (max-width: 767px) {

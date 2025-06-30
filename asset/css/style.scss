@@ -179,14 +179,20 @@ body {
 }
 
 @media (max-width: 992px) {
-  .hero h1 {
-    font-size: 80px;
-  }
-
-  .text-overlay {
-    width: 100%;
-    padding-left: 10px;
-    text-align: center;
+  .hero {
+    h1 {
+        font-size: 80px;
+    }
+    .text-overlay {
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .text-hero {
+        align-items: start;
+        padding-top: 20px;
+        min-height: 230px;
+    }
   }
 
   .hero,
@@ -204,12 +210,6 @@ body {
   .self-hero,
   .sub-self-hero {
     min-height: 520px;
-  }
-
-  .hero .text-hero {
-    align-items: start;
-    padding-top: 20px;
-    min-height: 230px;
   }
 
   .introBox {

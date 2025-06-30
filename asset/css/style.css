@@ -209,10 +209,17 @@ body .section {
   .hero h1 {
     font-size: 80px;
   }
-  .text-overlay {
+  .hero .text-overlay {
     width: 100%;
     padding-left: 10px;
     text-align: center;
+  }
+  .hero .text-hero {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-top: 20px;
+    min-height: 230px;
   }
   .hero,
   .sub-hero {
@@ -230,13 +237,6 @@ body .section {
   .self-hero,
   .sub-self-hero {
     min-height: 520px;
-  }
-  .hero .text-hero {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    padding-top: 20px;
-    min-height: 230px;
   }
   .introBox {
     margin-top: -2%;

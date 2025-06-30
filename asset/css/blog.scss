@@ -89,8 +89,10 @@ body {
 }
 /* -------------------------------------------------------------------------------------header */
 /* -------------------------------------------------------------------------------------section-home1 */
-
 .hero{
+    padding-top: 100px;
+}
+.hero,.sub-hero{
     border-top: 1px solid #000;
     z-index: 100;
     display: flex;
@@ -103,6 +105,7 @@ body {
     }
     .self-hero{
         background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section.png');
+
     } 
     .text-hero{
         background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png');
@@ -128,7 +131,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  .hero {
+  .hero,.sub-hero {
     h1 {
         font-size: 80px;
     }
@@ -143,6 +146,9 @@ body {
     .pic-hero,.blogpic,
     .info-hero{
         width: 100%;
+    }
+    .self-hero{
+        min-height: 520px;
     }
   }
 }
