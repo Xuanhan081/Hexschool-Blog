@@ -43,6 +43,26 @@ body {
         box-sizing: border-box;
     }
 }
+@media (max-width:860px){
+    body{
+        h1{
+            font-size: 100px;
+        }
+        h2{
+            font-size: 52px;
+        }
+        h3{
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width:767px) {
+    body{
+        h1{
+            font-size: 80px;
+        }
+    }
+}
 .navbar{
         position: fixed;
         z-index: 999;
@@ -54,16 +74,16 @@ body {
 }
 .container-fluid{
     display: flex;
+    width: 100%;
     justify-content: center;
     .menu{
         display: flex;
         gap: 24px;
         list-style-type: none;
         color:#000;
-        font-size: 28px;
         font-weight: bold;
-        .menu-item a{
-            color: #000;
+        .menu-item{
+            font-size: 28px;
         }
     }
 }
@@ -91,7 +111,7 @@ body {
     }
     .text-overlay{
         padding-left: 5%;
-        text-align: left;
+        text-align: center;
         .descrip{
             color: var(--color-primary);
             font-weight: bold;
@@ -108,17 +128,15 @@ body {
 }
 
 @media (max-width: 992px) {
-  .hero h1 {
-    font-size: 80px;
-  }
+  .hero {
+    h1 {
+        font-size: 80px;
+    }
 
-  .text-overlay {
-    width: 100%;
-    padding-left: 10px;
-    text-align: center;
-  }
-
-  .hero{
+    .text-overlay {
+        width: 100%;
+        padding-left: 10px;
+    }
     flex-direction: column;
     .self-hero,
     .text-hero,
@@ -126,18 +144,6 @@ body {
     .info-hero{
         width: 100%;
     }
-  }
-
-  
-
-  .self-hero{
-    min-height: 520px;
-  }
-
-  .hero .text-hero {
-    align-items: start;
-    padding-top: 20px;
-    min-height: 230px;
   }
 }
 

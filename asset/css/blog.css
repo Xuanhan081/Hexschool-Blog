@@ -49,6 +49,22 @@ body .section {
           box-sizing: border-box;
 }
 
+@media (max-width: 860px) {
+  body h1 {
+    font-size: 100px;
+  }
+  body h2 {
+    font-size: 52px;
+  }
+  body h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  body h1 {
+    font-size: 80px;
+  }
+}
 .navbar {
   position: fixed;
   z-index: 999;
@@ -62,6 +78,7 @@ body .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -73,11 +90,10 @@ body .section {
   gap: 24px;
   list-style-type: none;
   color: #000;
-  font-size: 28px;
   font-weight: bold;
 }
-.container-fluid .menu .menu-item a {
-  color: #000;
+.container-fluid .menu .menu-item {
+  font-size: 28px;
 }
 
 /* -------------------------------------------------------------------------------------header */
@@ -112,7 +128,7 @@ body .section {
 }
 .hero .text-overlay {
   padding-left: 5%;
-  text-align: left;
+  text-align: center;
 }
 .hero .text-overlay .descrip {
   color: var(--color-primary);
@@ -125,35 +141,24 @@ body .section {
   }
 }
 @media (max-width: 992px) {
-  .hero h1 {
-    font-size: 80px;
-  }
-  .text-overlay {
-    width: 100%;
-    padding-left: 10px;
-    text-align: center;
-  }
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .hero h1 {
+    font-size: 80px;
+  }
+  .hero .text-overlay {
+    width: 100%;
+    padding-left: 10px;
+  }
   .hero .self-hero,
   .hero .text-hero,
   .hero .pic-hero, .hero .blogpic,
   .hero .info-hero {
     width: 100%;
-  }
-  .self-hero {
-    min-height: 520px;
-  }
-  .hero .text-hero {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    padding-top: 20px;
-    min-height: 230px;
   }
 }
 @media (max-width: 767px) {
@@ -184,8 +189,8 @@ body .section {
 .info-hero {
   width: 50%;
   height: 60vh;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
