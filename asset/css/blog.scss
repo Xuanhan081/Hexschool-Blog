@@ -154,11 +154,12 @@ body {
 }
 
 @media (max-width: 767px) {
-  .hero h1 {
+.hero h1 {
     font-size: 52px;
   }
 }
 .pic-hero {
+    display: flex;
     width: 50%;
     height: 60vh;
     overflow: hidden;
