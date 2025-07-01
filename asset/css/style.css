@@ -52,28 +52,6 @@ body .section {
           box-sizing: border-box;
 }
 
-@media (max-width: 860px) {
-  body h1 {
-    font-size: 100px;
-  }
-  body h2 {
-    font-size: 52px;
-  }
-  body h3 {
-    font-size: 26px;
-  }
-}
-@media (max-width: 767px) {
-  body h1 {
-    font-size: 80px;
-  }
-  body h2 {
-    font-size: 42px;
-  }
-  body h3 {
-    font-size: 22px;
-  }
-}
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
 .navbar {
@@ -139,6 +117,9 @@ body .section {
 .hero .text-overlay .descrip {
   color: var(--color-primary);
   font-weight: bold;
+}
+.hero .h3br {
+  display: none;
 }
 
 /* 左右背景圖 */
@@ -239,7 +220,7 @@ body .section {
     min-height: 520px;
   }
   .introBox {
-    margin-top: -2%;
+    margin-top: -15%;
     width: 90%;
     margin-right: auto;
   }
@@ -250,6 +231,12 @@ body .section {
   }
   .introBox .social-li {
     gap: 3px;
+  }
+  .introBox {
+    margin-top: -30%;
+  }
+  .hero .h3br {
+    display: inline;
   }
 }
 /* -------------------------------------------------------------------------------------section-home1 */
@@ -366,7 +353,12 @@ body .section {
 }
 
 .swiper-wrapper {
-  width: 90%;
+  width: 80%;
+}
+
+.swiper {
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .swiper-controls {
@@ -449,12 +441,15 @@ body .section {
 
 @media (max-width: 767px) {
   .swiper-controls {
-    width: 80%;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     position: relative;
     margin-top: 20px;
   }
-  .swiper-wrapper {
-    width: 95%;
+  #blog .container {
+    width: 100%;
   }
 }
 @media (max-width: 680px) {
