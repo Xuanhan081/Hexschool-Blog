@@ -200,7 +200,7 @@ body .section {
         -ms-flex-align: start;
             align-items: start;
     padding-top: 20px;
-    min-height: 230px;
+    min-height: 320px;
   }
   .hero,
   .sub-hero {
