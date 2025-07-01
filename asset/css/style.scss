@@ -230,7 +230,7 @@ body {
     gap: 3px;
   }
   .introBox{
-    margin-top: -30%;
+    margin-top: -5%;
   }
   .hero .h3br{
     display: inline;
@@ -328,7 +328,7 @@ body {
     width: 90%;
     padding-top: 32px;
     padding-bottom: 38px;
-    max-width: 1580px;
+    max-width: 1480px;
     position: relative;
 }
 .swiper-wrapper{
@@ -339,7 +339,7 @@ body {
     margin-right: 60px;
 }
 .swiper-controls{
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: space-between;
     top: 50%;
@@ -351,7 +351,7 @@ body {
     font-size: 3rem;
     cursor: pointer;
     color: var(--color-primary);
-    z-index: 299;
+    z-index: 499;
     padding: 10px;
     }
 }
@@ -418,9 +418,6 @@ body {
         justify-content: end;
         position: relative;
         margin-top: 20px;
-    }
-    #blog .container{
-        width: 100%;
     }
 }
 @media (max-width:680px) {

@@ -233,7 +233,7 @@ body .section {
     gap: 3px;
   }
   .introBox {
-    margin-top: -30%;
+    margin-top: -5%;
   }
   .hero .h3br {
     display: inline;
@@ -348,7 +348,7 @@ body .section {
   width: 90%;
   padding-top: 32px;
   padding-bottom: 38px;
-  max-width: 1580px;
+  max-width: 1480px;
   position: relative;
 }
 
@@ -362,7 +362,7 @@ body .section {
 }
 
 .swiper-controls {
-  width: 100%;
+  width: 110%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +379,7 @@ body .section {
   font-size: 3rem;
   cursor: pointer;
   color: var(--color-primary);
-  z-index: 299;
+  z-index: 499;
   padding: 10px;
 }
 
@@ -447,9 +447,6 @@ body .section {
             justify-content: end;
     position: relative;
     margin-top: 20px;
-  }
-  #blog .container {
-    width: 100%;
   }
 }
 @media (max-width: 680px) {

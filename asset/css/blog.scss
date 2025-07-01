@@ -166,7 +166,8 @@ body {
     }
 }
 }
-
+/* -------------------------------------------------------------------------------------section-home1 */
+/* -------------------------------------------------------------------------------------section-newpost */
 .pic-hero {
     display: flex;
     width: 50%;
@@ -186,11 +187,13 @@ body {
 .info-hero{
     width: 50%;
     height: 60vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
     align-items: center;
     p{
+        display: inline-block;
+        width: 82%;
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -225,6 +228,7 @@ body {
         background: #000;
     }
 }
+/* -------------------------------------------------------------------------------------section-newpost */
 /* -------------------------------------------------------------------------------------footer */
 footer{
     border: 2px solid var(--color-ground);

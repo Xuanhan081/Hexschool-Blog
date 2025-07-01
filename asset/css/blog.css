@@ -172,6 +172,8 @@ body .section {
     display: inline;
   }
 }
+/* -------------------------------------------------------------------------------------section-home1 */
+/* -------------------------------------------------------------------------------------section-newpost */
 .pic-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,8 +200,8 @@ body .section {
 .info-hero {
   width: 50%;
   height: 60vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +211,8 @@ body .section {
   /*收合的class*/
 }
 .info-hero p {
+  display: inline-block;
+  width: 82%;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -241,6 +245,7 @@ body .section {
   background: #000;
 }
 
+/* -------------------------------------------------------------------------------------section-newpost */
 /* -------------------------------------------------------------------------------------footer */
 footer {
   border: 2px solid var(--color-ground);
