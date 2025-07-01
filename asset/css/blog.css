@@ -171,17 +171,22 @@ body .section {
 }
 /* -------------------------------------------------------------------------------------section-home1 */
 /* -------------------------------------------------------------------------------------section-newpost */
+.sub-hero {
+  height: auto;
+}
+
 .pic-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 60vh;
   overflow: hidden;
 }
 .pic-hero .blogpic {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto; /* 根據圖片比例自動調整 */
+  -o-object-fit: contain;
+     object-fit: contain; /* 可選，讓圖片保持比例 */
   background-size: cover;
   background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -196,7 +201,6 @@ body .section {
 
 .info-hero {
   width: 50%;
-  height: 60vh;
   padding-left: 5rem;
   padding-right: 5rem;
   display: -webkit-box;
@@ -247,10 +251,6 @@ body .section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .pic-hero .blogpic {
-    width: 100%;
-    height: auto;
   }
   .info-hero {
     -webkit-box-pack: center;
