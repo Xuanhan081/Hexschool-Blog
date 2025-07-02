@@ -24,6 +24,9 @@ body a {
   text-decoration: none;
   color: #000;
 }
+body a:hover {
+  color: coral;
+}
 body h1 {
   font-size: 120px;
   font-weight: bold;
@@ -95,7 +98,6 @@ body .section {
 }
 
 .hero, .sub-hero {
-  border-top: 1px solid #000;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +132,11 @@ body .section {
 .hero .text-overlay .descrip, .sub-hero .text-overlay .descrip {
   color: var(--color-primary);
   font-weight: bold;
+}
+
+.sub-hero {
+  border-top: 2px solid #29489e;
+  border-bottom: 2px solid #29489e;
 }
 
 @media (max-width: 1450px) {

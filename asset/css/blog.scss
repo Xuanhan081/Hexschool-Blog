@@ -19,6 +19,9 @@ body {
         text-decoration: none;
         color: #000;
     }
+    a:hover{
+        color: coral;
+    }
     h1{
         font-size: 120px;
         font-weight: bold;
@@ -96,7 +99,6 @@ body {
     }
 }
 .hero,.sub-hero{
-    border-top: 1px solid #000;
     z-index: 100;
     display: flex;
     height: 100vh;
@@ -123,6 +125,10 @@ body {
             font-weight: bold;
         }
     }
+}
+.sub-hero{
+    border-top: 2px solid #29489e;
+    border-bottom: 2px solid #29489e;
 }
 // ==========================
 // Media Queries
