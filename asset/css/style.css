@@ -52,6 +52,16 @@ body .section {
           box-sizing: border-box;
 }
 
+@media (max-width: 767px) {
+  .container h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .container h2 {
+    font-size: 46px;
+  }
+}
 /*---元素style---*/
 /* -------------------------------------------------------------------------------------header */
 .navbar {
@@ -97,6 +107,8 @@ body .section {
 .hero {
   padding-top: 100px;
   z-index: 100;
+  position: relative;
+  margin-bottom: 200px;
 }
 .hero .self-hero {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section.png");
@@ -136,13 +148,14 @@ body .section {
 
 .introBox {
   width: auto;
-  position: relative; /* 加這一行 */
+  position: absolute;
+  top: 52rem;
+  right: 2%;
   max-width: 1080px;
   padding: 65px 40px 65px 40px;
   background: rgba(255, 255, 255, 0.86);
   z-index: 199;
   font-size: 28px;
-  margin-top: -10%;
   margin-bottom: auto;
   margin-left: auto;
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -187,6 +200,9 @@ body .section {
   }
 }
 @media (max-width: 992px) {
+  .hero {
+    margin-bottom: 400px;
+  }
   .hero h1 {
     font-size: 80px;
   }
@@ -220,12 +236,16 @@ body .section {
     min-height: 520px;
   }
   .introBox {
-    margin-top: -15%;
+    top: 55rem;
+    right: 5%;
+    left: 5%;
     width: 90%;
-    margin-right: auto;
   }
 }
 @media (max-width: 767px) {
+  .hero {
+    margin-bottom: 650px;
+  }
   .hero h1 {
     font-size: 52px;
   }
@@ -233,7 +253,7 @@ body .section {
     gap: 3px;
   }
   .introBox {
-    margin-top: -5%;
+    top: 53rem;
   }
   .hero .h3br {
     display: inline;
