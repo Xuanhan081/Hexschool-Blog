@@ -47,23 +47,20 @@ body {
         box-sizing: border-box;
     }
 }
-// @media (max-width:860px){
-//     body{
-//         h1{
-//             font-size: 100px;
-//         }
-//         h2{
-//             font-size: 52px;
-//         }
-//         h3{
-//             font-size: 26px;
-//         }
-//     }
-// }
+@media (max-width:860px){
+    body{
+        h3{
+            font-size: 26px;
+        }
+    }
+}
 @media (max-width:767px) {
     body{
         h1{
             font-size: 80px;
+        }
+        h3{
+            font-size: 24px;
         }
     }
 }
@@ -287,7 +284,7 @@ body {
     color: #a6b8da;
 }
 .blog-wrapper{
-    gap: 20px;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
     p{
@@ -315,7 +312,7 @@ body {
     }
     .card{
         padding: 0px;
-        width: 32%;
+        max-width: 32%;
     }
     /*收合的class*/
     .collapsed {
@@ -324,6 +321,30 @@ body {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+@media (max-width: 1200px) {
+    .blog-wrapper{
+        .card{
+            max-width: 48%;
+        }
+    }
+}
+@media (max-width: 774px) {
+    .blog-wrapper{
+        .card{
+            max-width: 96%;
+        }
+    }
+    .searchBox{
+        width: 350px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 576px) {
+    .searchBox{
+        width: 100%;
+        font-size: 16px;
     }
 }
 /* -------------------------------------------------------------------------------------sectionBlog */
