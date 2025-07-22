@@ -42,7 +42,8 @@ body h3 {
   font-family: "Noto Serif HK", serif;
 }
 body h4 {
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: bold;
 }
 body time {
   display: block;
@@ -276,6 +277,7 @@ body .section {
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
 }
 
 .searchWrapper {
@@ -303,6 +305,54 @@ body .section {
           transform: translateY(-50%);
   font-size: 25px;
   color: #a6b8da;
+}
+
+.blog-wrapper {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*收合的class*/
+}
+.blog-wrapper p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.blog-wrapper .blogpic {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* 動畫效果 */
+}
+.blog-wrapper .blogpic:hover {
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+}
+.blog-wrapper .blogpic-wrap {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.blog-wrapper h3, .blog-wrapper h4 {
+  padding: 0;
+}
+.blog-wrapper h3 a, .blog-wrapper h4 a {
+  color: var(--color-primary);
+}
+.blog-wrapper .card {
+  padding: 0px;
+  width: 32%;
+}
+.blog-wrapper .collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 顯示兩行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* -------------------------------------------------------------------------------------sectionBlog */

@@ -37,7 +37,8 @@ body {
         font-family: "Noto Serif HK", serif;
     }
     h4{
-        font-size: 26px;
+        font-size: 24px;
+        font-weight: bold;
     }
     time{
         display: block;
@@ -260,6 +261,7 @@ body {
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 80px;
 }
 .searchWrapper {
     position: relative;
@@ -283,6 +285,46 @@ body {
     transform: translateY(-50%);
     font-size: 25px;
     color: #a6b8da;
+}
+.blog-wrapper{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .blogpic{
+        width: 100%;
+        transition: transform 0.3s ease; /* 動畫效果 */
+    }
+    .blogpic:hover {
+      transform: scale(1.1) rotate(2deg); /* 放大並旋轉 */
+    }
+    .blogpic-wrap{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    h3,h4{
+        padding: 0;
+        a{
+            color: var(--color-primary);
+        }
+    }
+    .card{
+        padding: 0px;
+        width: 32%;
+    }
+    /*收合的class*/
+    .collapsed {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 顯示兩行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 /* -------------------------------------------------------------------------------------sectionBlog */
 /* -------------------------------------------------------------------------------------footer */
